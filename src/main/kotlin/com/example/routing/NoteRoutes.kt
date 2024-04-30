@@ -102,3 +102,20 @@ fun Routing.noteRoutes() {
 
 
 }
+
+fun Application.requests(){
+    routing {
+        get("/req") {
+            println("my URL ${call.request.uri}")
+            println("my URL ${call.request.headers.names()}")
+            println("my URL ${call.request.headers.get("Accept")}")
+            println("my URL Querys ${call.request.queryParameters.names()}")
+            println("my URL Querys ${call.request.queryParameters.get("name")}")
+        }
+        get("/page/{id}") {
+            val pagenumber=call.parameters.get("id")
+            println("page number: $pagenumber")
+            call.respondText("page number: $pagenumber")
+        }
+    }
+}
