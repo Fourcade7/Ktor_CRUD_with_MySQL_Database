@@ -10,9 +10,9 @@ Json Serialization
         plugins {
             kotlin("jvm") version "1.9.23"
             id("io.ktor.plugin") version "2.3.10"
-            kotlin("plugin.serialization") version "1.9.23"
+            kotlin("plugin.serialization") version "1.9.23" //https://kotlinlang.org/docs/serialization.html#add-plugins-and-dependencies
         }
-
+        //https://ktor.io/docs/serialization.html#serialization_dependency
         implementation("io.ktor:ktor-server-content-negotiation:$ktor_version")
         implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
 
