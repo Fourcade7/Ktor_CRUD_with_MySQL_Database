@@ -8,3 +8,10 @@ Json Serialization
 
         implementation("io.ktor:ktor-server-content-negotiation:$ktor_version")
         implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
+
+Database Connection MySql
+
+        // https://mvnrepository.com/artifact/org.ktorm/ktorm-core
+        implementation("org.ktorm:ktorm-core:3.6.0")
+        // https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
+        implementation("com.mysql:mysql-connector-j:8.3.0")
