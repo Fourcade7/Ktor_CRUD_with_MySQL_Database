@@ -5,6 +5,21 @@ New Project
 
 
 
+
+
+Creating fat JARs using the Ktor Gradle plugin Open the build.gradle.kts
+
+        plugins {
+            id("io.ktor.plugin") version "2.3.10"
+        }
+
+        ktor {
+            fatJar {
+                archiveFileName.set("fat.jar")
+            }
+        }
+
+
 Json Serialization
 
         plugins {
