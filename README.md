@@ -22,6 +22,13 @@ Creating fat JARs using the Ktor Gradle plugin Open the build.gradle.kts
             }
         }
 
+Build and run a fat JAR﻿
+The Ktor plugin provides the following tasks for creating and running fat JARs:
+
+buildFatJar: builds a combined JAR of a project and runtime dependencies. You should see the ***-all.jar file in the build/libs directory when this build completes.
+
+runFatJar: builds a fat JAR of a project and runs it.
+
 
 Json Serialization
 
