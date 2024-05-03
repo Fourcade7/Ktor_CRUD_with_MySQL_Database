@@ -47,3 +47,14 @@ Database Connection MySql
         implementation("org.ktorm:ktorm-core:3.6.0")
         // https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
         implementation("com.mysql:mysql-connector-j:8.3.0")
+
+
+Run the Java Application in Background:
+
+        java -jar MyApp.jar &
+
+Close the Java Application:
+        ps aux | grep "MyApp.jar"
+        kill <PID>
+        killall -21 java
+  
