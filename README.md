@@ -54,6 +54,7 @@ Run the Java Application in Background:
         java -jar MyApp.jar &
 
 Close the Java Application:
+
         ps aux | grep "MyApp.jar"
         kill <PID>
         killall -21 java
